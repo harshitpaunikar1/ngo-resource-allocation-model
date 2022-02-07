@@ -8,3 +8,7 @@
 
 - Task summary: Started this one by sitting down and trying to understand what NGO Resource Allocation Model should actually become. I did not rush into code yet. The main thing here was to define the allocation or prioritization decision behind NGO Resource Allocation Model so the project had a decent base. This was still the messy setup part where I was opening files, checking examples, and trying not to overthink it too early. Most of the progress here came from patient cleanup more than anything flashy.
 - Deliverable: By the end of the day I had optimization brief written down in a rough way, which was enough to stop guessing and move into the next step. There were still a couple of loose parts, but nothing serious enough to block the next step.
+## 2022-02-07 - Day 2: Data collection pass
+
+- Task summary: Used the next day to keep the momentum going for NGO Resource Allocation Model. I was still piecing things together, so I focused on trying to gather the input data, constraints, and any business rules and wrote down the stuff that looked important. I was still mostly figuring out the shape of it, so a lot of the day went into small notes and half clear ideas. A lot of this also meant checking if the numbers were making sense and not just trusting the first result that showed up.
+- Deliverable: I wrapped up the day with inputs and constraints mostly in place. It was not perfect, but it was good enough to keep the project moving. It was not super polished, just stable enough that I felt okay moving forward.

@@ -12,3 +12,7 @@
 
 - Task summary: Used the next day to keep the momentum going for NGO Resource Allocation Model. I was still piecing things together, so I focused on trying to gather the input data, constraints, and any business rules and wrote down the stuff that looked important. I was still mostly figuring out the shape of it, so a lot of the day went into small notes and half clear ideas. A lot of this also meant checking if the numbers were making sense and not just trusting the first result that showed up.
 - Deliverable: I wrapped up the day with inputs and constraints mostly in place. It was not perfect, but it was good enough to keep the project moving. It was not super polished, just stable enough that I felt okay moving forward.
+## 2022-02-07 - Day 2: Data collection pass
+
+- Task summary: One more pass: added inline comments in the dense sections — would have been confusing to revisit without them.
+- Deliverable: Good enough to not be embarrassing.

@@ -20,3 +20,7 @@
 
 - Task summary: By this point I had the rough direction, so the work became more practical. I spent most of the day trying to clean and standardize the inputs so they can drive the model and make the whole thing feel less half baked. The middle part always takes longer than it should, mostly becuase one fix usually reveals two more things to clean up. I kept bouncing between the notebook, small observations, and quick plots until the direction felt usable.
 - Deliverable: I wrapped up the day with prepared inputs mostly in place. It was not perfect, but it was good enough to keep the project moving. I also left myself a few rough reminders for the next day so I would not have to rediscover the same context again.
+## 2022-02-08 - Day 3: Data cleanup pass
+
+- Task summary: Spent another hour on this: spent time just reading back through everything to make sure it still made sense end to end.
+- Deliverable: Minor but worth doing.

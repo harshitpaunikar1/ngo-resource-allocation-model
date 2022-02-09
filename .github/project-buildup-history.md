@@ -32,3 +32,7 @@
 
 - Task summary: One more pass: wrapped a repeated block in a helper function since it showed up three times.
 - Deliverable: Small fix, clean result.
+## 2022-02-09 - Day 4: Exploration
+
+- Task summary: Circled back: updated the requirements file — had missed one indirect dependency.
+- Deliverable: Should've caught it earlier but better now than later.

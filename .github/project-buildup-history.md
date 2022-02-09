@@ -24,3 +24,7 @@
 
 - Task summary: Spent another hour on this: spent time just reading back through everything to make sure it still made sense end to end.
 - Deliverable: Minor but worth doing.
+## 2022-02-09 - Day 4: Exploration
+
+- Task summary: By this point I had the rough direction, so the work became more practical. I spent most of the day trying to review how resources, demand, or outcomes vary across the dataset and make the whole thing feel less half baked. By now I had enough structure to keep going without staring at the screen too long, which honestly helped a lot. Most of the progress here came from patient cleanup more than anything flashy.
+- Deliverable: I wrapped up the day with exploration summary mostly in place. It was not perfect, but it was good enough to keep the project moving. There were still a couple of loose parts, but nothing serious enough to block the next step.

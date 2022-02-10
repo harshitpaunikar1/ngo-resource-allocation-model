@@ -36,3 +36,7 @@
 
 - Task summary: Circled back: updated the requirements file — had missed one indirect dependency.
 - Deliverable: Should've caught it earlier but better now than later.
+## 2022-02-10 - Day 5: Scoring logic
+
+- Task summary: This was the middle stretch where the project started feeling real. I kept going and tried to build a simple scoring or weighting approach before making it more advanced, then cleaned up whatever looked confusing or weak from the earlier days. Once the base made some sense, I could finally move a bit faster and stop second guessing every tiny decision. A lot of this also meant checking if the numbers were making sense and not just trusting the first result that showed up.
+- Deliverable: Ended the day with baseline scoring model in hand, plus a few side notes on what still needed fixing later. It was not super polished, just stable enough that I felt okay moving forward.

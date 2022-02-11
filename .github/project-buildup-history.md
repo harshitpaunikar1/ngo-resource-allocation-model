@@ -44,3 +44,7 @@
 
 - Task summary: One more pass: the test I wrote this morning had a hardcoded path, swapped it for a relative one.
 - Deliverable: One of those satisfying small wins.
+## 2022-02-11 - Day 6: Optimization logic
+
+- Task summary: This was the middle stretch where the project started feeling real. I kept going and tried to turn the score into a ranked list or rule-based allocation method, then cleaned up whatever looked confusing or weak from the earlier days. The middle part always takes longer than it should, mostly becuase one fix usually reveals two more things to clean up. I kept bouncing between the notebook, small observations, and quick plots until the direction felt usable.
+- Deliverable: Ended the day with allocation logic in hand, plus a few side notes on what still needed fixing later. I also left myself a few rough reminders for the next day so I would not have to rediscover the same context again.

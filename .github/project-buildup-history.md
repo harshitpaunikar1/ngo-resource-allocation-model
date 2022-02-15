@@ -56,3 +56,7 @@
 
 - Task summary: Came back after lunch and realized updated the requirements file — had missed one indirect dependency.
 - Deliverable: Cleaner than this morning's version.
+## 2022-02-15 - Day 8: Validation
+
+- Task summary: Closer to the end, I was mostly tightening things up instead of inventing new scope. The job for the day was to check whether the outputs make practical sense to a normal decision maker so the final result looked a bit more complete. I was not trying to add anything fancy here, just making sure the thing looked complete enough to show someone. A lot of this also meant checking if the numbers were making sense and not just trusting the first result that showed up.
+- Deliverable: Ended the day with validation notes in hand, plus a few side notes on what still needed fixing later. It was not super polished, just stable enough that I felt okay moving forward.

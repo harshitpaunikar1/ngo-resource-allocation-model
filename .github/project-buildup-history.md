@@ -12,3 +12,7 @@
 
 - Task summary: Added a parameter sensitivity section outline — wanted to make sure the final model would have a clear way to test how sensitive the allocation recommendations are to changes in the impact estimates.
 - Deliverable: Sensitivity analysis structure planned. Will implement after base model is working.
+## 2022-09-12 - Day 2: Problem structuring
+
+- Task summary: Quick data check: the impact estimate table had a few missing region-intervention combinations. Decided to impute those with the regional average rather than dropping the region entirely.
+- Deliverable: Missing impact estimates imputed with regional averages.

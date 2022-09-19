@@ -16,3 +16,7 @@
 
 - Task summary: Quick data check: the impact estimate table had a few missing region-intervention combinations. Decided to impute those with the regional average rather than dropping the region entirely.
 - Deliverable: Missing impact estimates imputed with regional averages.
+## 2022-09-19 - Day 3: Linear programming baseline
+
+- Task summary: Implemented a linear programming baseline for the NGO allocation problem today using scipy's linprog. The LP relaxation ignores the integer constraints on some allocation variables but gives a useful lower bound and is fast to solve. The unconstrained optimal solution was not surprising — it concentrated resources heavily in the highest-impact interventions. Added the geographic coverage constraint and saw how that changed the allocation spread. Documented both scenarios.
+- Deliverable: LP baseline with and without geographic constraints implemented and documented.

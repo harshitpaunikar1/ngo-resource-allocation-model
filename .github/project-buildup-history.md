@@ -20,3 +20,7 @@
 
 - Task summary: Implemented a linear programming baseline for the NGO allocation problem today using scipy's linprog. The LP relaxation ignores the integer constraints on some allocation variables but gives a useful lower bound and is fast to solve. The unconstrained optimal solution was not surprising — it concentrated resources heavily in the highest-impact interventions. Added the geographic coverage constraint and saw how that changed the allocation spread. Documented both scenarios.
 - Deliverable: LP baseline with and without geographic constraints implemented and documented.
+## 2022-10-31 - Day 4: Sensitivity analysis
+
+- Task summary: Ran the sensitivity analysis for the NGO allocation model today. Varied the impact estimates by plus and minus 20 percent and observed how the optimal allocation shifted. Some interventions were robust — they appeared in the top allocations across all scenarios. Others were sensitive — they only appeared when their impact estimate was at the optimistic end. Plotted a tornado diagram to show the range of outcome variation per parameter. That diagram became the most useful output for the stakeholder framing.
+- Deliverable: Sensitivity analysis complete. Tornado diagram added. Robust vs sensitive interventions identified.

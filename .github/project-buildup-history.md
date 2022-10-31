@@ -24,3 +24,7 @@
 
 - Task summary: Ran the sensitivity analysis for the NGO allocation model today. Varied the impact estimates by plus and minus 20 percent and observed how the optimal allocation shifted. Some interventions were robust — they appeared in the top allocations across all scenarios. Others were sensitive — they only appeared when their impact estimate was at the optimistic end. Plotted a tornado diagram to show the range of outcome variation per parameter. That diagram became the most useful output for the stakeholder framing.
 - Deliverable: Sensitivity analysis complete. Tornado diagram added. Robust vs sensitive interventions identified.
+## 2022-10-31 - Day 4: Sensitivity analysis
+
+- Task summary: Added a scenario comparison table showing optimal allocation under pessimistic, base case, and optimistic impact assumptions. Much clearer than reading the tornado diagram alone.
+- Deliverable: Scenario comparison table added.

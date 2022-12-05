@@ -28,3 +28,7 @@
 
 - Task summary: Added a scenario comparison table showing optimal allocation under pessimistic, base case, and optimistic impact assumptions. Much clearer than reading the tornado diagram alone.
 - Deliverable: Scenario comparison table added.
+## 2022-12-05 - Day 5: Final write-up
+
+- Task summary: Wrote the final summary document for the NGO Resource Allocation project. This included a section on the problem formulation, the LP model structure, a description of the sensitivity analysis, and the key recommendations. Made a point of writing it in a way that a program manager without optimization background could follow — led with the recommendations and buried the technical formulation in an appendix.
+- Deliverable: Final document written. Recommendations first, technical detail in appendix.

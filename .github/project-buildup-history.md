@@ -32,3 +32,7 @@
 
 - Task summary: Wrote the final summary document for the NGO Resource Allocation project. This included a section on the problem formulation, the LP model structure, a description of the sensitivity analysis, and the key recommendations. Made a point of writing it in a way that a program manager without optimization background could follow — led with the recommendations and buried the technical formulation in an appendix.
 - Deliverable: Final document written. Recommendations first, technical detail in appendix.
+## 2022-12-05 - Day 5: Final write-up
+
+- Task summary: Added an interactive budget slider to the Jupyter notebook — lets you vary the total budget and see how the allocation changes. More engaging than static tables.
+- Deliverable: Interactive budget slider added to allocation notebook.

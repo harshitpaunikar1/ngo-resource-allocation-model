@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Allocating Under Scarcity: An Ethics-Aware Resource Memo</title>
-  <meta name="description" content="How an international NGO translates socioeconomic indicators into ranked country allocations — the indicators, the weights, the constraints, and the tradeoffs that scoring cannot hide.">
+  <meta name="description" content="How an international NGO translates socioeconomic indicators into ranked country allocations - the indicators, the weights, the constraints, and the tradeoffs that scoring cannot hide.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=Source+Sans+3:wght@300;400;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
   <style>
@@ -210,10 +210,10 @@
   <div class="doc-stamp">
     <span>ALLOCATION MEMO</span>
     <span>INTERNATIONAL HUMANITARIAN NGO</span>
-    <span>INTERNAL — RESTRICTED DISTRIBUTION</span>
+    <span>INTERNAL - RESTRICTED DISTRIBUTION</span>
   </div>
   <h1>Allocating Under Scarcity:<br>An Ethics-Aware Resource Decision Memo</h1>
-  <p class="sub">When the budget covers a fraction of the need, the question is no longer "who needs help" — it is "which criteria we are optimizing, for whom, and what we are conceding by that choice."</p>
+  <p class="sub">When the budget covers a fraction of the need, the question is no longer "who needs help" - it is "which criteria we are optimizing, for whom, and what we are conceding by that choice."</p>
   <div class="doc-meta">
     <div class="doc-meta-item">SCOPE<strong>Country-Level Aid Targeting</strong></div>
     <div class="doc-meta-item">DATA SOURCE<strong>Country-data.csv (167 countries)</strong></div>
@@ -229,26 +229,26 @@
   <main class="prose">
 
     <h2 id="pressure">Mission Pressure and the Scarcity Problem</h2>
-    <p>The NGO's mandate is expansive. Fighting poverty and providing basic amenities across the developing world is not a bounded problem — it is a permanently underfunded one. The gap between need and available budget is not a temporary operational challenge to be solved by better efficiency; it is a structural condition that means every allocation decision is simultaneously a decision about who receives fewer resources. Pretending otherwise produces allocation frameworks that look rigorous on paper but have smuggled in their value judgments invisibly.</p>
+    <p>The NGO's mandate is expansive. Fighting poverty and providing basic amenities across the developing world is not a bounded problem - it is a permanently underfunded one. The gap between need and available budget is not a temporary operational challenge to be solved by better efficiency; it is a structural condition that means every allocation decision is simultaneously a decision about who receives fewer resources. Pretending otherwise produces allocation frameworks that look rigorous on paper but have smuggled in their value judgments invisibly.</p>
 
-    <p>The starting data is a cross-sectional dataset of 167 countries, each described by nine socioeconomic and health indicators: child mortality, exports and imports as percent of GDP, health expenditure, income, inflation, life expectancy, fertility rate, and GDP per capita. These are publicly available macro indicators from sources including the World Bank and UN agencies. They describe national averages, which means they flatten enormous within-country inequality — a country with a high average income may have a large population in deep poverty — but they are the grain of resolution at which international humanitarian budget decisions are practically made.</p>
+    <p>The starting data is a cross-sectional dataset of 167 countries, each described by nine socioeconomic and health indicators: child mortality, exports and imports as percent of GDP, health expenditure, income, inflation, life expectancy, fertility rate, and GDP per capita. These are publicly available macro indicators from sources including the World Bank and UN agencies. They describe national averages, which means they flatten enormous within-country inequality - a country with a high average income may have a large population in deep poverty - but they are the grain of resolution at which international humanitarian budget decisions are practically made.</p>
 
     <p>The analytical task is to identify which countries should be prioritized for resource allocation. The honest version of that task has three components: <strong>measuring need</strong>, <strong>estimating delivery feasibility</strong>, and <strong>making explicit the value judgments</strong> that determine how those two dimensions combine into a ranked list. The notebook does the first two competently. The third is what this memo makes visible.</p>
 
     <h2 id="indicators">Indicator Definition: What We Are Measuring and Why</h2>
 
     <h3>The Nine Indicators and Their Interpretive Weight</h3>
-    <p><strong>Child mortality</strong> (under-5 deaths per 1,000 live births) is the most direct severity signal in the dataset. High child mortality is not merely an outcome to be lamented; it is evidence of simultaneous failures in nutrition, sanitation, healthcare access, and maternal health systems. A country with child mortality above 100 per 1,000 is experiencing what demographers call a "high-mortality regime" — a cascade of deprivation in which each component makes the others worse. This indicator carries the heaviest interpretive weight in the need assessment.</p>
+    <p><strong>Child mortality</strong> (under-5 deaths per 1,000 live births) is the most direct severity signal in the dataset. High child mortality is not merely an outcome to be lamented; it is evidence of simultaneous failures in nutrition, sanitation, healthcare access, and maternal health systems. A country with child mortality above 100 per 1,000 is experiencing what demographers call a "high-mortality regime" - a cascade of deprivation in which each component makes the others worse. This indicator carries the heaviest interpretive weight in the need assessment.</p>
 
     <p><strong>Life expectancy</strong> is the inverse long-run signal. Low life expectancy at birth integrates child mortality, adult disease burden, and healthcare quality into a single number. Its correlation with child mortality in this dataset runs above r = 0.85, which means including both in a raw scoring model would double-count the same underlying dimension. The allocation framework handles this through PCA-based dimensionality reduction before clustering, which collapses correlated signals into independent components rather than counting them twice.</p>
 
-    <p><strong>Per capita GDP and income</strong> are proxies for a country's own resource capacity. A low-income country with poor health indicators has both high need and limited self-rescue capacity; the two together define what international aid literature calls a "poverty trap" condition. A middle-income country with similar health indicators has poor health outcomes relative to its economic capacity, which suggests a governance or distribution failure rather than a resource constraint — a different type of intervention need.</p>
+    <p><strong>Per capita GDP and income</strong> are proxies for a country's own resource capacity. A low-income country with poor health indicators has both high need and limited self-rescue capacity; the two together define what international aid literature calls a "poverty trap" condition. A middle-income country with similar health indicators has poor health outcomes relative to its economic capacity, which suggests a governance or distribution failure rather than a resource constraint - a different type of intervention need.</p>
 
     <p><strong>Health expenditure as percent of GDP</strong> reveals whether the country is already investing in the system that aid would support. A government spending 2 percent of GDP on health when it could afford more is making a policy choice that any external aid should acknowledge; aid that compensates for deliberate underinvestment creates different incentives than aid that supplements genuinely limited fiscal capacity.</p>
 
-    <p><strong>Fertility rate</strong> is a proxy for structural demographic pressure. High fertility rates in low-income environments produce rapid population growth that outpaces service delivery improvements, creating a "moving baseline" problem where the denominator of service coverage expands faster than the numerator of service delivery. It also correlates strongly with women's education and autonomy — dimensions that are not separately measured in this dataset but are relevant to program design.</p>
+    <p><strong>Fertility rate</strong> is a proxy for structural demographic pressure. High fertility rates in low-income environments produce rapid population growth that outpaces service delivery improvements, creating a "moving baseline" problem where the denominator of service coverage expands faster than the numerator of service delivery. It also correlates strongly with women's education and autonomy - dimensions that are not separately measured in this dataset but are relevant to program design.</p>
 
-    <p><strong>Inflation</strong> is the one indicator whose high value is not straightforwardly bad — moderate inflation is normal; hyperinflation signals economic instability. For aid delivery, very high inflation matters because it erodes the purchasing power of in-kind or cash transfers and complicates multi-year programmatic commitments. It functions more as a delivery risk indicator than a need indicator.</p>
+    <p><strong>Inflation</strong> is the one indicator whose high value is not straightforwardly bad - moderate inflation is normal; hyperinflation signals economic instability. For aid delivery, very high inflation matters because it erodes the purchasing power of in-kind or cash transfers and complicates multi-year programmatic commitments. It functions more as a delivery risk indicator than a need indicator.</p>
 
     <p><strong>Exports and imports as percent of GDP</strong> are trade openness measures. Their direct relevance to humanitarian need is indirect: trade openness correlates with development stage and institutional quality, but high openness alone does not reduce poverty. These features contribute to the clustering geometry without being primary drivers of the need signal.</p>
 
@@ -257,7 +257,7 @@
       <div class="diagram-scroll">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 740 430" width="720" style="max-width:100%;display:block;">
           <rect width="740" height="430" fill="#fff"/>
-          <text x="30" y="22" font-family="JetBrains Mono,monospace" font-size="9.5" fill="#888" letter-spacing="1.5">FIG. 1 — ALLOCATION DECISION SLATE: NEED × DELIVERY FEASIBILITY MATRIX</text>
+          <text x="30" y="22" font-family="JetBrains Mono,monospace" font-size="9.5" fill="#888" letter-spacing="1.5">FIG. 1 - ALLOCATION DECISION SLATE: NEED × DELIVERY FEASIBILITY MATRIX</text>
 
           <!-- axes -->
           <!-- X: Delivery Feasibility (low→high) -->
@@ -334,16 +334,16 @@
           <text x="600" y="308" font-family="JetBrains Mono,monospace" font-size="8.5" fill="#aaa" text-anchor="middle">CLUSTER 4: Developed</text>
         </svg>
       </div>
-      <figcaption><em>Fig. 1 — Allocation Decision Slate. Countries land in the matrix based on their composite need score (vertical axis) and delivery feasibility estimate (horizontal axis). The constraint corridor (dashed box, upper right) marks the zone where both need is high and delivery is feasible — the primary allocation target under budget limits. Countries with high need but low feasibility require triage-mode or proxy delivery arrangements and cannot absorb the same program formats as the primary corridor.</em></figcaption>
+      <figcaption><em>Fig. 1 - Allocation Decision Slate. Countries land in the matrix based on their composite need score (vertical axis) and delivery feasibility estimate (horizontal axis). The constraint corridor (dashed box, upper right) marks the zone where both need is high and delivery is feasible - the primary allocation target under budget limits. Countries with high need but low feasibility require triage-mode or proxy delivery arrangements and cannot absorb the same program formats as the primary corridor.</em></figcaption>
     </figure>
 
     <h2 id="method">The Scoring Method: K-Means Clustering and Its Assumptions</h2>
 
     <p>The modeling approach uses K-means clustering to group countries into segments based on their indicator profiles, then uses those segments to generate a priority ranking. K-means is an appropriate first-pass tool for this problem because it groups countries by similarity across multiple dimensions simultaneously, which is more defensible than manually weighting and summing indicators. But K-means carries assumptions that matter for how seriously the output should be treated.</p>
 
-    <p><strong>K-means assumes clusters are roughly spherical and equal-sized.</strong> In this dataset, that assumption is violated. The "developed world" cluster — high-income countries with low mortality and high life expectancy — contains far more countries than the "dire need" cluster, because most of the world has made measurable development progress since 1990. The model will find this imbalance and produce clusters of unequal size, which is fine descriptively but requires care in interpretation: a cluster of 80 countries rated "medium need" should not receive the same program budget weight as a cluster of 15 countries rated "high need."</p>
+    <p><strong>K-means assumes clusters are roughly spherical and equal-sized.</strong> In this dataset, that assumption is violated. The "developed world" cluster - high-income countries with low mortality and high life expectancy - contains far more countries than the "dire need" cluster, because most of the world has made measurable development progress since 1990. The model will find this imbalance and produce clusters of unequal size, which is fine descriptively but requires care in interpretation: a cluster of 80 countries rated "medium need" should not receive the same program budget weight as a cluster of 15 countries rated "high need."</p>
 
-    <p><strong>K-means is sensitive to feature scale.</strong> Income per capita ranges from roughly $300 to $60,000 in this dataset; child mortality ranges from 2 to 180. Without standardization, the income variable dominates the distance calculation simply because it has larger absolute values. The notebook applies StandardScaler before clustering, which is correct. But this also means the cluster boundaries shift when new countries or updated data are added, because the scaling parameters change — a production system would need to freeze scaler parameters on the training cohort.</p>
+    <p><strong>K-means is sensitive to feature scale.</strong> Income per capita ranges from roughly $300 to $60,000 in this dataset; child mortality ranges from 2 to 180. Without standardization, the income variable dominates the distance calculation simply because it has larger absolute values. The notebook applies StandardScaler before clustering, which is correct. But this also means the cluster boundaries shift when new countries or updated data are added, because the scaling parameters change - a production system would need to freeze scaler parameters on the training cohort.</p>
 
     <p><strong>K-means cannot handle categorical constraints.</strong> The allocation decision involves constraints that are not in the indicator data: active conflict, sanctions regimes, diplomatic relationship status, existing program commitments from other donor agencies, and government cooperation levels. These constraints are not expressible as K-means features; they enter the decision process as post-hoc filters applied after the scoring-based ranking is generated.</p>
 
@@ -372,27 +372,27 @@ country_df['cluster'] = kmeans.fit_predict(X_pca)
 # not by the arbitrary integer K-means assigns them.
 # Cluster 0 is not always "Dire" across runs.</code></pre>
 
-    <p>The number of clusters — 4, in this analysis — is a choice, not a discovery. The elbow curve on within-cluster sum of squares suggests that the marginal improvement flattens around k=3 to k=5, which means reasonable analysts could construct 3-cluster or 5-cluster solutions. The 4-cluster solution produces interpretable labels (Dire, Stressed, Middle, Developed) that align with practical allocation categories, which is a valid criterion for choosing k when the goal is operational, not purely statistical.</p>
+    <p>The number of clusters - 4, in this analysis - is a choice, not a discovery. The elbow curve on within-cluster sum of squares suggests that the marginal improvement flattens around k=3 to k=5, which means reasonable analysts could construct 3-cluster or 5-cluster solutions. The 4-cluster solution produces interpretable labels (Dire, Stressed, Middle, Developed) that align with practical allocation categories, which is a valid criterion for choosing k when the goal is operational, not purely statistical.</p>
 
     <h2 id="constraints">Constraints: Where Scoring Meets Reality</h2>
 
     <p>A scoring model without constraints is a ranked wish list. The constraints that convert a ranked list into an allocation plan are where the real decision-making lives.</p>
 
     <h3>Budget Ceiling as a Hard Constraint</h3>
-    <p>Suppose the NGO's deployable budget for the next program cycle covers meaningful intervention in 20 countries. The K-means output might identify 40 countries in the "Dire" or "Stressed" clusters. The 20 that receive funding and the 20 that do not are determined by the post-scoring ranking, which means the tie-breaking criteria — recency of previous investment, partner presence on the ground, donor-restricted funds, geopolitical positioning — become the actual allocation mechanism. These tie-breakers are often implicit. Making them explicit is the primary governance obligation of the allocation committee.</p>
+    <p>Suppose the NGO's deployable budget for the next program cycle covers meaningful intervention in 20 countries. The K-means output might identify 40 countries in the "Dire" or "Stressed" clusters. The 20 that receive funding and the 20 that do not are determined by the post-scoring ranking, which means the tie-breaking criteria - recency of previous investment, partner presence on the ground, donor-restricted funds, geopolitical positioning - become the actual allocation mechanism. These tie-breakers are often implicit. Making them explicit is the primary governance obligation of the allocation committee.</p>
 
     <h3>Delivery Capacity as a Soft Constraint</h3>
-    <p>Even within the budget, delivery capacity constrains what can be programmed in a given country in a given year. A country experiencing civil conflict may score highest on the need composite but be unable to absorb a multi-year health infrastructure program. The right response is not to deprioritize the country — the need is real — but to adapt the program format. Emergency relief, cash transfers through mobile money, and support to diaspora remittance networks are all delivery modes that function in low-feasibility environments. The allocation model should generate recommendations about program type alongside recommendations about country priority.</p>
+    <p>Even within the budget, delivery capacity constrains what can be programmed in a given country in a given year. A country experiencing civil conflict may score highest on the need composite but be unable to absorb a multi-year health infrastructure program. The right response is not to deprioritize the country - the need is real - but to adapt the program format. Emergency relief, cash transfers through mobile money, and support to diaspora remittance networks are all delivery modes that function in low-feasibility environments. The allocation model should generate recommendations about program type alongside recommendations about country priority.</p>
 
     <h3>Equity Constraint: Geographic and Population-Size Fairness</h3>
-    <p>A pure need-plus-feasibility ranking will systematically produce lists dominated by Sub-Saharan African countries, which have both high need and moderate delivery environments. That is not a bias — it reflects reality. But it creates political and donor-relations challenges for organizations that have historical programming commitments in South Asia or that receive funds from donors with geographic preferences. Acknowledging this explicitly — rather than allowing it to silently distort the scoring framework — is an ethical obligation. If geographic distribution constraints are applied, they should appear in the methodology as explicit parameters with documented justification, not as unstated post-hoc adjustments to the ranked list.</p>
+    <p>A pure need-plus-feasibility ranking will systematically produce lists dominated by Sub-Saharan African countries, which have both high need and moderate delivery environments. That is not a bias - it reflects reality. But it creates political and donor-relations challenges for organizations that have historical programming commitments in South Asia or that receive funds from donors with geographic preferences. Acknowledging this explicitly - rather than allowing it to silently distort the scoring framework - is an ethical obligation. If geographic distribution constraints are applied, they should appear in the methodology as explicit parameters with documented justification, not as unstated post-hoc adjustments to the ranked list.</p>
 
     <!-- DIAGRAM 2: Score-to-Recommendation Ladder -->
     <figure>
       <div class="diagram-scroll">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 330" width="680" style="max-width:100%;display:block;">
           <rect width="680" height="330" fill="#fff"/>
-          <text x="30" y="22" font-family="JetBrains Mono,monospace" font-size="9.5" fill="#888" letter-spacing="1.5">FIG. 2 — SCORE-TO-RECOMMENDATION LADDER</text>
+          <text x="30" y="22" font-family="JetBrains Mono,monospace" font-size="9.5" fill="#888" letter-spacing="1.5">FIG. 2 - SCORE-TO-RECOMMENDATION LADDER</text>
 
           <!-- Ladder rungs: 5 levels -->
           <!-- Rung 1 (top, highest need): full black fill -->
@@ -452,7 +452,7 @@ country_df['cluster'] = kmeans.fit_predict(X_pca)
           <text x="455" y="300" font-family="JetBrains Mono,monospace" font-size="8.5" fill="#888">→</text>
         </svg>
       </div>
-      <figcaption><em>Fig. 2 — Score-to-recommendation ladder. Each tier maps a cluster profile to an allocation action type and budget priority. The ladder converts statistical group membership into an operational recommendation. Note that Tier 1 and Tier 2 together define the primary allocation corridor — both receive high priority, but program formats differ based on delivery feasibility assessed separately from need scoring.</em></figcaption>
+      <figcaption><em>Fig. 2 - Score-to-recommendation ladder. Each tier maps a cluster profile to an allocation action type and budget priority. The ladder converts statistical group membership into an operational recommendation. Note that Tier 1 and Tier 2 together define the primary allocation corridor - both receive high priority, but program formats differ based on delivery feasibility assessed separately from need scoring.</em></figcaption>
     </figure>
 
     <h2 id="ethics">The Ethics of What Scoring Hides</h2>
@@ -460,7 +460,7 @@ country_df['cluster'] = kmeans.fit_predict(X_pca)
     <p>Any multi-criteria scoring system embeds a theory of moral priority. This one is no different, and the choices it makes deserve explicit statement.</p>
 
     <h3>Equal Weighting Is Not Neutral</h3>
-    <p>When K-means computes distances across standardized features, it implicitly treats all features as equally important after scaling. That is a weighting choice — the choice to weight child mortality the same as export percentage — not the absence of a weighting choice. If the allocation committee believes that child mortality should count three times as heavily as trade openness in determining priority, that preference should be expressed through explicit feature weighting or through principal component selection that gives more weight to need-related dimensions, not left to the implicit arithmetic of Euclidean distance.</p>
+    <p>When K-means computes distances across standardized features, it implicitly treats all features as equally important after scaling. That is a weighting choice - the choice to weight child mortality the same as export percentage - not the absence of a weighting choice. If the allocation committee believes that child mortality should count three times as heavily as trade openness in determining priority, that preference should be expressed through explicit feature weighting or through principal component selection that gives more weight to need-related dimensions, not left to the implicit arithmetic of Euclidean distance.</p>
 
     <h3>Within-Country Inequality Is Invisible</h3>
     <p>Country-average indicators obscure the populations that humanitarian programs are designed to reach. A country with a mean income of $3,000 may have a median income of $800 and a large poor rural population that looks nothing like the national average. Programs designed based on national aggregates will systematically under-allocate to within-country poor populations if the country's average profile places it in a lower-need cluster. The model does not see this; the allocation committee must supply geographic and demographic sub-national data through separate analytical work.</p>
@@ -474,11 +474,11 @@ country_df['cluster'] = kmeans.fit_predict(X_pca)
 
     <p><strong>Criteria review</strong> happens before the model runs. The allocation committee should confirm the indicator set, the weighting approach (explicit or implicit through K-means), the number of clusters, and the post-scoring filters that will be applied. Any change to these parameters after the ranked list has been generated creates a documentation obligation: if the list was changed post-hoc, the reason must be recorded.</p>
 
-    <p><strong>Cluster profile review</strong> happens when the model runs. Each cluster should be characterized by its centroid profile and populated with country names. The committee should verify that the clusters make intuitive sense — that countries labeled "Dire" are recognizably dire, and that the cluster boundaries do not produce surprising absences (a well-known high-need country that lands in a medium-need cluster should trigger an investigation of whether the features and the K value are appropriately specified).</p>
+    <p><strong>Cluster profile review</strong> happens when the model runs. Each cluster should be characterized by its centroid profile and populated with country names. The committee should verify that the clusters make intuitive sense - that countries labeled "Dire" are recognizably dire, and that the cluster boundaries do not produce surprising absences (a well-known high-need country that lands in a medium-need cluster should trigger an investigation of whether the features and the K value are appropriately specified).</p>
 
-    <p><strong>Allocation review</strong> is the human override stage. The ranked list from the model is a starting point. The committee applies real-world constraints — active conflicts, program continuity obligations, donor restrictions — and documents every departure from the model's rank order with a named justification. The final allocation plan then shows both the model's recommendation and the committee's decision, with divergences explained. This is the audit trail that makes the process accountable rather than opaque.</p>
+    <p><strong>Allocation review</strong> is the human override stage. The ranked list from the model is a starting point. The committee applies real-world constraints - active conflicts, program continuity obligations, donor restrictions - and documents every departure from the model's rank order with a named justification. The final allocation plan then shows both the model's recommendation and the committee's decision, with divergences explained. This is the audit trail that makes the process accountable rather than opaque.</p>
 
-    <p>Data-driven allocation is not more objective than expert judgment — it is differently positioned. It surfaces patterns across many countries simultaneously in a way that human review of individual country reports cannot. It is consistent in applying its criteria, which human review often is not. But it has no access to the on-the-ground realities that field staff know and that the indicators do not capture. The right governance structure treats the model's output as one well-structured input to a decision process that is still, ultimately, made by humans who are accountable for it.</p>
+    <p>Data-driven allocation is not more objective than expert judgment - it is differently positioned. It surfaces patterns across many countries simultaneously in a way that human review of individual country reports cannot. It is consistent in applying its criteria, which human review often is not. But it has no access to the on-the-ground realities that field staff know and that the indicators do not capture. The right governance structure treats the model's output as one well-structured input to a decision process that is still, ultimately, made by humans who are accountable for it.</p>
 
     <div class="closing-block">
       <p>Dataset: Country-data.csv, 167 countries, 9 socioeconomic indicators. Method: StandardScaler → PCA (2 components) → K-Means (k=4). Source indicators from World Bank open data. This memo reflects an educational analytical exercise. Actual humanitarian allocation decisions involve field verification, donor-partner coordination, and governance review processes beyond the scope of this notebook.</p>
@@ -510,7 +510,7 @@ country_df['cluster'] = kmeans.fit_predict(X_pca)
 
     <div class="margin-note">
       <div class="margin-note-label">Model Limit</div>
-      <p>K-means assumes <strong>roughly equal cluster sizes</strong>. In a world where most countries have made development gains, the "Dire" cluster will be smaller than the model's geometry expects — weight allocations accordingly, not proportionally.</p>
+      <p>K-means assumes <strong>roughly equal cluster sizes</strong>. In a world where most countries have made development gains, the "Dire" cluster will be smaller than the model's geometry expects - weight allocations accordingly, not proportionally.</p>
     </div>
 
     <div class="margin-note">
